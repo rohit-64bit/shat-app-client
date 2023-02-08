@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import io from 'socket.io-client'
 import { nanoid } from 'nanoid'
 
-const socket = io.connect('http://localhost:8000')
+const socket = io.connect('https://chat-app-backend-p1g8.onrender.com')
 
 function App() {
   const [name, setName] = useState("")
